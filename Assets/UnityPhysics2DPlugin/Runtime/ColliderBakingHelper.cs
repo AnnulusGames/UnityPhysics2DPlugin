@@ -36,6 +36,8 @@ namespace UnityPhysics2DPlugin
 
             material.Friction = collider.friction;
             material.Restitution = collider.bounciness;
+            material.FrictionCombinePolicy = Material.CombinePolicy.ArithmeticMean;
+            material.RestitutionCombinePolicy = Material.CombinePolicy.ArithmeticMean;
 
             return material;
         }
