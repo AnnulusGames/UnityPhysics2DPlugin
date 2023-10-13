@@ -14,7 +14,7 @@ Unity Physics 2D PluginはZ軸を固定した3Dコライダを用いて2D向け�
 
 ### 要件
 
-* Unity 2022.1 以上
+* Unity 2022.3 以上
 * Entities 1.0.0 以上
 * Unity Physics 1.0.0以上
 

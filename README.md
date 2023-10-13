@@ -15,7 +15,7 @@ The Unity Physics 2D Plugin simulates 2D physics behavior using 3D colliders wit
 
 ### Requirements
 
-* Unity 2022.1 or higher
+* Unity 2022.3 or higher
 * Entities 1.0.0 or higher
 * Unity Physics 1.0.0 or higher
 
