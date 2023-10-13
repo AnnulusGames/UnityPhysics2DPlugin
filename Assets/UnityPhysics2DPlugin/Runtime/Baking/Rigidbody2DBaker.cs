@@ -44,7 +44,7 @@ namespace UnityPhysics2DPlugin.Baking
             AddColliders(entity, authoring);
             if (authoring.sharedMaterial != null) DependsOn(authoring.sharedMaterial);
 
-            if (IsStatic()) return;
+            if (IsStatic() || authoring.bodyType == RigidbodyType2D.Static) return;
 
             if (hasInterpolation)
             {
