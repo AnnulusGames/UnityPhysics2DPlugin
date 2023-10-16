@@ -27,9 +27,7 @@ namespace UnityPhysics2DPlugin.Baking
                 mass = authoring.mass,
                 automaticCenterOfMass = false,
                 centerOfMass = new float3(authoring.centerOfMass.x, authoring.centerOfMass.y, 0f),
-                automaticInertiaTensor = false,
-                inertiaTensor = new float3(1f, 1f, math.INFINITY),
-                inertiaTensorRotation = quaternion.Euler(0f, 0f, authoring.inertia),
+                automaticInertiaTensor = true
             };
             AddComponent(entity, bakingData);
 
