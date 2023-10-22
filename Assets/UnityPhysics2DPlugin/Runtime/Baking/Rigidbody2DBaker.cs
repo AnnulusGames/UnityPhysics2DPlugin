@@ -77,8 +77,9 @@ namespace UnityPhysics2DPlugin.Baking
         void AddColliders(Entity entity, Rigidbody2D authoring)
         {
             GetComponentsInChildren(colliderComponents);
+            if (colliderComponents.Count == 0) return;
 
-            if (colliderComponents.Count == 0 && colliderComponents[0].gameObject == authoring.gameObject)
+            if (colliderComponents.Count == 1 && colliderComponents[0].gameObject == authoring.gameObject)
             {
                 if (!colliderComponents[0].enabled) return;
 
